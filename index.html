@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina </title>
+<link rel="stylesheet" type="text/css" href="CSS/Estilito.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Rowdies&display=swap" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body>
+
+   <header>
+      <div class="hamburguesa" id="hamburguesa">
+         <div class="barra-hamburguesa"></div>
+         <div class="barra-hamburguesa"></div>
+         <div class="barra-hamburguesa"></div>
+      </div>
+
+         
+      <div class="contenedor-menu" id="contenedor-menu">
+            <ul class="lista">
+               <li><a href="#hamburguesa">Inicio</a></li>
+               <li><a href="#columnas">Galeria</a></li>
+               <li><a href="#informacion">Contacto</a></li>
+            </ul>
+         </div>  
+   </header>
+   
+   <div>
+      <section class= "banner">
+         <h1>Bienvenido</h1>
+
+      </section>     
+
+   </div>
+   <div class="espacio"></div>
+   <div class="titulo"><h1>Animalitos</h1></div>
+
+   <div id="columnas" class="columna">
+
+      <div class="fila">
+         <div class="texto">
+            <h2>Este es un Loro</h2>
+            <br>
+            <p>Este es un pájaro muy colorido y hablador</p>
+         </div>
+
+         <div class="panel-derecho">
+            <div><img src="IMAGENES/images (1).jpg" alt="Loro" class="vimagencard"></div>
+            <div><img src="IMAGENES/images (2).jpg" alt="Perico" class="vimagencard"></div>
+         </div>
+      </div>
+
+      <div class="fila">
+         <div class="texto">
+            <h2>Este es un perico</h2>
+            <br>
+            <p>Gordito y bonito</p>
+         </div>
+
+         <div class="panel-derecho">
+            <div><img src="IMAGENES/images (2).jpg" alt="Perico" class="vimagencard"></div>
+         </div>
+      </div>
+
+      <div class="fila">
+         <div class="texto">
+            <h2>Este es un Pug</h2>
+            <br>
+            <p>bonito y profesional</p>
+         </div>
+
+         <div class="panel-derecho">
+            <div><img src="IMAGENES/images.jpg" alt="Pug elegante" class="vimagencard"></div>
+         </div>
+      </div>
+
+   </div>
+   <div class="espacio"></div>
+   <div class="espacio"></div>
+
+</body>
+<footer>
+<img src="" alt="">
+<div >
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d783.4155461394254!2d-75.4406860566967!3d6.276137456582476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4426ae01ee6431%3A0x85b0aa230c8d8731!2sCl.%2044%20%23%2051-15%2C%20Guarne%2C%20Antioquia!5e0!3m2!1sen!2sco!4v1791664015431!5m2!1sen!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class= mapa></iframe>
+</div>
+<div class="informacion" id ="informacion">
+   <p>Contacto: 123-456-7890</p> <br>
+   <p>Dirección: Calle 123, Ciudad, País</p><br>
+   <p>Correo electrónico: info@veterinaria.com</p><br>
+   <p>Empresa: © Vettina</p><br>
+   <p>aca habia una veterinaria pero ya no esta ahi </p> 
+</div>
+<div class="links">
+   <a href="https://www.magnific.com/es/fotos-vectores-gratis/parakeet-portrait">De aca saque la imagen</a>
+   <br><br>
+   <a href="#hamburguesa">Regresar al inicio</a>
+</div>
+</footer>
+
+<script>
+const hamburguesa = document.getElementById("hamburguesa");
+const contenedorMenu = document.getElementById("contenedor-menu");
+
+hamburguesa.addEventListener("click", function () {
+   const estaVisible = contenedorMenu.style.display === "block";
+   contenedorMenu.style.display = estaVisible ? "none" : "block";
+});
+</script>
+
+</html>

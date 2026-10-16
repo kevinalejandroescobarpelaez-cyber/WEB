@@ -34,6 +34,8 @@ body {
     align-items: center;
     padding: 20px;
     background: var(--color-primario);
+    max-width: 70%;
+    gap: 20px;
 }
 
 
@@ -46,6 +48,13 @@ body {
     height: 25px;
     cursor: pointer;
     margin: 25px;
+    display: none;
+}
+@media (max-width: 768px) {
+    .hamburguesa {
+        display: flex;
+        
+    }
 }
 
 
@@ -70,6 +79,14 @@ body {
     border-radius: 5%;
     padding: 30px;
     background-color: var(--color-fondo-claro);
+    transition: 0.2s;
+
+}
+
+.fila:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+
 }
 
 
@@ -120,7 +137,7 @@ footer {
 @media (min-width: 768px) {
     .contenedor-menu {
         display: flex;
-        
+
     }
 }
 
@@ -128,16 +145,23 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    justify-content: right;
     background-color: var(--color-fondo-oscuro);
     border-radius: 5%;
     margin: 5px;
     padding: 20px;
-    box-shadow: #01232b 0px 4px 8px 0px;
+    vertical-align: middle;
+    box-shadow: #D085E8 0px 4px 8px 0px;
+    justify-content: space-between;
 
 }
+@media (min-width: 768px) {
+    .lista {
+        gap: 60px;
 
+    }
+}
 
+.linea{}
 
 
 .banner {
@@ -145,10 +169,13 @@ footer {
     background-image: url("../IMAGENES/imagen\ horizontal.jpg");
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-size: cover;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-blend-mode:multiply;
+    background-color: #D085E8;
 }
 
 
@@ -179,38 +206,48 @@ p {
   font-optical-sizing: auto;
     color: var(--color-texto);
   font-style: normal;
+  font-size: large;
 }
 
 
 :root {
-    --color-primario: #F66C89;
-    --color-secundario: #234D68;
-    --color-terciario: #566B81;
-    --color-fondo-oscuro: #013440;
-    --color-fondo-claro: #b4d8e0;
-    --color-texto: #01232b;
-    --color-acento: #f6e86c;
+    --color-primario: #FF9F82;      /* durazno: panel de las imágenes */
+    --color-secundario: #85E8A5;    /* verde */
+    --color-terciario: #9FCAFF;     /* azul: fondo de la página */
+    --color-fondo-oscuro: #D085E8;  /* morado: menú y footer */
+    --color-fondo-claro: #FFFFFF;   /* blanco */
+    --color-texto: #3B2A4A;         /* texto oscuro para que se lea */
+    --color-acento: #FFFA93;        /* amarillo */
 }
 
 header {
     background-color: var(--color-fondo-claro);
     text-align: right;
     padding: 10px;
-    margin-top: auto;
-    height: fit-content;
+    margin-right: 10px;
 
+    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    height: 100px;
+    position: fixed;
+    width: 95%;
 }
 
 a {
     color: var(--color-fondo-claro);
     text-decoration: none;
     font-weight: bold;
+    
+}
+a:hover{
+    background-color: #3B2A4A;
+
 }
 
+
 .titulo {  
-    background-color: var(--color-fondo-claro);
+    background-color: var(--color-acento);
     border-radius: 10%;
     width: 100%;
  
@@ -221,4 +258,18 @@ a {
  .espacio {
     height: 20px;
     width: 100%;
+ }
+
+ .feed{
+    justify-content: space-between;
+
+ }
+
+ .logo{
+    height: 100%;
+    aspect-ratio: 1/1;
+ }
+
+ .espaciado_header{
+    height: 125px;
  }

@@ -17,7 +17,7 @@
 </style>
 </head>
 <body>
-
+<div class="espaciado_header"></div>
    <header>
       <div class="hamburguesa" id="hamburguesa">
          <div class="barra-hamburguesa"></div>
@@ -28,11 +28,14 @@
          
       <div class="contenedor-menu" id="contenedor-menu">
             <ul class="lista">
-               <li><a href="#hamburguesa">Inicio</a></li>
+               <li><a href="#hamburguesa" class="linea">Inicio</a></li>
                <li><a href="#columnas">Galeria</a></li>
                <li><a href="#informacion">Contacto</a></li>
             </ul>
          </div>  
+
+
+         <img src="IMAGENES/logo_pug.png" alt="logo pug" class="logo"  id="logo">
    </header>
    
    <div>
@@ -42,6 +45,7 @@
       </section>     
 
    </div>
+   <di class="Feed">
    <div class="espacio"></div>
    <div class="titulo"><h1>Animalitos</h1></div>
 
@@ -83,7 +87,7 @@
             <div><img src="IMAGENES/images.jpg" alt="Pug elegante" class="vimagencard"></div>
          </div>
       </div>
-
+      </div>
    </div>
    <div class="espacio"></div>
    <div class="espacio"></div>
@@ -111,10 +115,12 @@
 <script>
 const hamburguesa = document.getElementById("hamburguesa");
 const contenedorMenu = document.getElementById("contenedor-menu");
-
+const logo = document.getElementById("logo");
 hamburguesa.addEventListener("click", function () {
    const estaVisible = contenedorMenu.style.display === "block";
    contenedorMenu.style.display = estaVisible ? "none" : "block";
+   logo.style.display = estaVisible ?  "block": "none";
+   
 });
 </script>
 

@@ -8,6 +8,12 @@ html {
     background-color: var(--color-fondo-claro);
 }
 
+@media (min-width: 768px) {
+    html {
+        zoom: 1.4;
+    }
+}
+
 body {
     background-color: var(--color-terciario);
     width: 100%;
@@ -149,11 +155,19 @@ footer {
     border-radius: 5%;
     margin: 5px;
     padding: 20px;
+    list-style: none;
+    padding-left: 0;
     vertical-align: middle;
     box-shadow: #D085E8 0px 4px 8px 0px;
     justify-content: space-between;
 
 }
+
+.lista li {
+    margin-left: 12px;
+}
+
+
 @media (min-width: 768px) {
     .lista {
         gap: 60px;
@@ -161,7 +175,6 @@ footer {
     }
 }
 
-.linea{}
 
 
 .banner {
@@ -204,9 +217,9 @@ h1 {
 p {
   font-family: "Libre Caslon Condensed", serif;
   font-optical-sizing: auto;
-    color: var(--color-texto);
+  color: var(--color-texto);
   font-style: normal;
-  font-size: large;
+  font-size: 1.5rem;
 }
 
 
@@ -232,6 +245,7 @@ header {
     height: 100px;
     position: fixed;
     width: 95%;
+    z-index: 1000;
 }
 
 a {
